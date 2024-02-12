@@ -9,6 +9,10 @@
             text-align: center;
         }
 
+        #home {
+            width: 100%;
+        }
+
         .navigation {
             margin-left: 50px;
             position: fixed;
@@ -19,13 +23,66 @@
         }
 
         .navigation a {
-            color: rgb(184, 163, 125);
+            color: #DBC672;
             display: block;
             font-size: 25px;
             padding: 6px 8px 6px 16px;
             text-decoration: none;
         }
 
+        .container {
+            position: relative;
+            text-align: center;
+            color: #DBC672;
+        }
+
+        .mnblue {
+            width: 30%;
+            height: 30%;
+            border-radius: 16px;
+        }
+
+        #details {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .top {
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .topb {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .venue {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .date {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .time {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     </style>
     <title>A Cat Invitation</title>
 </head>
@@ -40,13 +97,14 @@
 
     <img id="home" src="https://m.media-amazon.com/images/M/MV5BOTVkZmE4ZjQtODY3MS00OTQ5LTk0ZDQtYTBkNjc2Y2VkNGQyXkEyXkFqcGdeQXVyMzY5ODU0Mzc@._V1_.jpg">
 
-    <div>
+    <div class="container">
+        <img class="mnblue" src="https://i.pinimg.com/564x/d9/60/91/d96091722846673eb0012dd47483802c.jpg" alt="midnight blue">
         <h2 id="details">- Details -</h2>
-        <p>You are invited!</p>
-        <p>This is a CAThering for us to show our might to those humans.</p>
-        <p><b>Venue: </b>Cat Valley</p>
-        <p><b>Date: </b>12/02/24</p>
-        <p><b>Time: </b>Midnight</p><br>
+        <p class="top">You are invited!</p>
+        <p class="topb">This is a CAThering for us to show our might to those humans.</p>
+        <p class="venue"><b>Venue: </b>Cat Valley</p>
+        <p class="date"><b>Date: </b>12/02/24</p>
+        <p class="time"><b>Time: </b>Midnight</p><br>
     </div>
 
     <div>
