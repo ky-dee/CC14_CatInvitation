@@ -9,8 +9,9 @@
             text-align: center;
         }
 
-        #home {
-            width: 100%;
+        .cat {
+            border-radius: 16px;
+            width: 80%;
         }
 
         .navigation {
@@ -83,6 +84,33 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
+
+        .header .rsvp {
+            background-color: #071630;
+            border: none;
+            border-radius: 16px;
+            color: white;
+            padding: 20px 24px;
+            position: absolute;
+            text-decoration: none;
+            transform: translate(-50%, -50%);
+            top: 70%;
+        }
+
+        .header .rsvp:hover {
+            background-color: #183568;
+        }
+
+        .send {
+            border: none;
+            border-radius: 16px;
+            margin: 10px;
+            padding: 16px;
+        }
+
+        .send:hover {
+            background-color: #183568;
+        }
     </style>
     <title>A Cat Invitation</title>
 </head>
@@ -90,12 +118,14 @@
     <div class="navigation">
         <a href="#home">Home</a>
         <a href="#details">Details</a>
-        <a href="#rsvp">RSVP</a>
         <a href="#objective">About</a>
         <a href="#contact">Contact</a>
     </div>
 
-    <img id="home" src="https://m.media-amazon.com/images/M/MV5BOTVkZmE4ZjQtODY3MS00OTQ5LTk0ZDQtYTBkNjc2Y2VkNGQyXkEyXkFqcGdeQXVyMzY5ODU0Mzc@._V1_.jpg">
+    <div class="header">
+        <img id="home" class="cat" src="https://m.media-amazon.com/images/M/MV5BOTVkZmE4ZjQtODY3MS00OTQ5LTk0ZDQtYTBkNjc2Y2VkNGQyXkEyXkFqcGdeQXVyMzY5ODU0Mzc@._V1_.jpg">
+        <p><a href="#rsvp" class="rsvp button">RSVP</a></p>
+    </div>
 
     <div class="container">
         <img class="mnblue" src="https://i.pinimg.com/564x/d9/60/91/d96091722846673eb0012dd47483802c.jpg" alt="midnight blue">
@@ -108,17 +138,6 @@
     </div>
 
     <div>
-        <h2 id="rsvp">- RSVP -</h2>
-        <p>Nya! Respond by February 10</p>
-        <input type="text" placeholder="Name(s)">
-        <br><input id="accept" type="radio" name="invite">
-        <label for="accept">Myes</label>
-        <input id="decline" type="radio" name="invite">
-        <label for="decline">Mnoew</label>
-        <br><input class="send" type="submit" value="send">
-    </div>
-
-    <div>
         <br><h2 id="objective">- About -</h2>
         <p>Unleash the Purr-ower! In this feline fiesta, our fur-tastic friends aim to 
             demonstrate their strength and resilience to the occasional tail-trodding 
@@ -128,6 +147,17 @@
             fortitude. It's time for humans to marvel at the strength within those fluffy 
             tails!</p>
             <br><iframe width="560" height="315" src="https://www.youtube.com/embed/-YKuxZgDamM?si=vJxAtabUFU5PJxna" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div>
+        <h2 id="rsvp">- RSVP -</h2>
+        <p>Nya! Respond by February 15</p>
+        <input type="text" placeholder="Name(s)">
+        <br><input id="accept" type="radio" name="invite">
+        <label for="accept">Myes</label>
+        <input id="decline" type="radio" name="invite">
+        <label for="decline">Mnoew</label>
+        <br><input class="send" type="submit" value="send">
     </div>
 
     <div>
