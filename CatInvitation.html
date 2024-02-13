@@ -5,6 +5,11 @@
     <meta name="viewpoint" content="width=device-width", initial-scale="1.0">
 
     <style>
+        .about {
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+
         body {
             text-align: center;
         }
@@ -14,21 +19,21 @@
             width: 80%;
         }
 
+        .container {
+            position: relative;
+            text-align: center;
+            color: #DBC672;
+        }
+
         .navigation {
             text-align: center;
         }
 
         .navigation a {
             color: #071630;
-            font-size: 25px;
+            font-size: 20px;
             padding: 14px 16px;
             text-decoration: none;
-        }
-
-        .container {
-            position: relative;
-            text-align: center;
-            color: #DBC672;
         }
 
         .mnblue {
@@ -79,11 +84,20 @@
             transform: translate(-50%, -50%);
         }
 
+        .header h1 {
+            color: #DBC672;
+            font-size: 100px;
+            position: absolute;
+            top: 30%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+        }
+
         .header .rsvp-button {
-            background-color: #071630;
+            background-color: #DBC672;
             border: none;
             border-radius: 16px;
-            color: white;
+            color: #183568;
             padding: 20px 24px;
             position: absolute;
             text-decoration: none;
@@ -93,6 +107,7 @@
 
         .header .rsvp-button:hover {
             background-color: #183568;
+            color: #DBC672;
         }
 
         .send {
@@ -106,7 +121,7 @@
             background-color: #183568;
         }
     </style>
-    <title>A Cat Invitation</title>
+    <title>A Cat Gathering</title>
 </head>
 <body>
     <div class="navigation">
@@ -118,7 +133,8 @@
 
     <div class="header">
         <img id="home" class="cat" src="https://m.media-amazon.com/images/M/MV5BOTVkZmE4ZjQtODY3MS00OTQ5LTk0ZDQtYTBkNjc2Y2VkNGQyXkEyXkFqcGdeQXVyMzY5ODU0Mzc@._V1_.jpg">
-        <p><a href="#rsvp" class="rsvp-button">RSVP</a></p>
+        <p><a href="#rsvp" class="rsvp-button">↓ RSVP</a></p>
+        <h1>Neko no Shuukai</h1>
     </div>
 
     <div class="container">
@@ -131,7 +147,7 @@
         <p class="time"><b>Time: </b>Midnight</p><br>
     </div>
 
-    <div>
+    <div class="about">
         <br><h2 id="objective">- About -</h2>
         <p>Unleash the Purr-ower! In this feline fiesta, our fur-tastic friends aim to 
             demonstrate their strength and resilience to the occasional tail-trodding 
