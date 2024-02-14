@@ -3,38 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width", initial-scale="1.0">
-
+    
     <style>
-        .about {
-            margin-left: 30%;
-            margin-right: 30%;
-        }
-
         body {
             text-align: center;
         }
 
-        .cat {
+        .header {
+            position: relative;
+        }
+
+        .header-title {
+            color: #dbc672;
+            font-size: 5vw;
+
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
+
+        #home {
             border-radius: 16px;
             width: 80%;
         }
 
-        .container {
-            position: relative;
-            text-align: center;
-            color: #DBC672;
-            height: 300px;
-            width: 500px;
-            background-color: #071630;
-            border-radius: 16px;
-            margin-left: 35%;
-            top: 100%;
-            transform: translate(0, -50%);
-            padding: 10px;
-        }
-
         .navigation {
-            text-align: center;
             margin-bottom: 15px;
         }
 
@@ -45,142 +39,45 @@
             text-decoration: none;
         }
 
-        .mnblue {
-            width: 30%;
-            height: 30%;
+        .navigation a:hover {
+            text-decoration: underline;
+        }
+
+        .rsvp-button {
+            background-color: #dbc672;
             border-radius: 16px;
-        }
-
-        #details {
-            position: absolute;
-            top: 5%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .top {
-            position: absolute;
-            top: 15%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .topb {
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .venue {
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .date {
-            position: absolute;
-            top: 35%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .time {
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .header h1 {
-            color: #DBC672;
-            font-size: 100px;
-            position: absolute;
-            top: 30%;
-            transform: translate(-50%, -50%);
-            left: 50%;
-        }
-
-        .header .rsvp-button {
-            background-color: #DBC672;
-            border: none;
-            border-radius: 16px;
-            color: #183568;
+            color: #071630;
             padding: 20px 24px;
-            position: absolute;
             text-decoration: none;
+
+            left: 50%;
+            top: 75%;
             transform: translate(-50%, -50%);
-            top: 70%;
+            position: absolute;
+            z-index: 100;
         }
 
-        .header .rsvp-button:hover {
-            background-color: #183568;
-            color: #DBC672;
-        }
-
-        .send {
-            border: none;
-            border-radius: 16px;
-            margin: 10px;
-            padding: 16px;
-        }
-
-        .send:hover {
-            background-color: #183568;
+        .rsvp-button:hover {
+            background-color: #071630;
+            color: #dbc672;
         }
     </style>
+
     <title>A Cat Gathering</title>
+    <link rel="icon" href="https://i.ytimg.com/vi/vCOn3Usvz9g/maxresdefault.jpg">
 </head>
 <body>
     <div class="navigation">
         <a href="#home">Home</a>
         <a href="#details">Details</a>
-        <a href="#objective">About</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </div>
 
     <div class="header">
-        <img id="home" class="cat" src="https://m.media-amazon.com/images/M/MV5BOTVkZmE4ZjQtODY3MS00OTQ5LTk0ZDQtYTBkNjc2Y2VkNGQyXkEyXkFqcGdeQXVyMzY5ODU0Mzc@._V1_.jpg">
-        <p><a href="#rsvp" class="rsvp-button">↓ RSVP</a></p>
-        <h1>Neko no Shuukai</h1>
-    </div>
-
-    <div class="container">
-        <h2 id="details">- Details -</h2>
-        <p class="top">You are invited!</p>
-        <p class="topb">This is a CAThering for us to show our might to those humans.</p>
-        <p class="venue"><b>Venue: </b>Cat Valley</p>
-        <p class="date"><b>Date: </b>12/02/24</p>
-        <p class="time"><b>Time: </b>Midnight</p><br>
-    </div>
-
-    <div class="about">
-        <br><h2 id="objective">- About -</h2>
-        <p>Unleash the Purr-ower! In this feline fiesta, our fur-tastic friends aim to 
-            demonstrate their strength and resilience to the occasional tail-trodding 
-            mishap. Join us as our purr-suasive cats showcase their mighty strides, proving 
-            that even the gentlest purr can pack a powerful punch. Prepare to be amazed as our 
-            whiskered wonders turn accidental tail-stepping moments into a showcase of feline 
-            fortitude. It's time for humans to marvel at the strength within those fluffy 
-            tails!</p>
-            <br><iframe width="560" height="315" src="https://www.youtube.com/embed/-YKuxZgDamM?si=vJxAtabUFU5PJxna" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-
-    <div>
-        <h2 id="rsvp">- RSVP -</h2>
-        <p>Nya! Respond by February 15</p>
-        <input type="text" placeholder="Name(s)">
-        <br><input id="accept" type="radio" name="invite">
-        <label for="accept">Myes</label>
-        <input id="decline" type="radio" name="invite">
-        <label for="decline">Mnoew</label>
-        <br><input class="send" type="submit" value="send">
-    </div>
-
-    <div>
-        <br><h2 id="contact">- Contact Us -</h2>
-        <a href="mailto:nekonoshuukai">nekonoshuukai</a>
+        <a href="#rsvp" class="rsvp-button">💌 RSVP</a>
+        <h1 class="header-title">Neko no Shuukai</h1>
+        <img id="home" src="https://m.media-amazon.com/images/M/MV5BOTVkZmE4ZjQtODY3MS00OTQ5LTk0ZDQtYTBkNjc2Y2VkNGQyXkEyXkFqcGdeQXVyMzY5ODU0Mzc@._V1_.jpg">
     </div>
 </body>
 </html>
